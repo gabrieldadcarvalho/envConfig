@@ -1,0 +1,334 @@
+{
+  // Personaliza as cores da interface do VS Code.
+  "workbench.colorCustomizations": {
+    // Cor de fundo do emblema de notificação na Barra de Atividades.
+    "activityBarBadge.background": "#282936",
+    // Cor do texto do emblema de notificação na Barra de Atividades.
+    "activityBarBadge.foreground": "#5AF78D"
+  },
+  // Define o shell padrão para o terminal integrado no Linux.
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  // Define o perfil de terminal padrão para o macOS.
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  // Impede que o Prettier use as configurações do arquivo .editorconfig.
+  "prettier.useEditorConfig": false,
+  // Usa espaços em vez de tabs para indentação com o Prettier.
+  "prettier.useTabs": false,
+  // Habilita logs de depuração para a extensão Prettier.
+  "prettier.enableDebugLogs": true,
+  // Permite que o Prettier encontre módulos instalados globalmente.
+  "prettier.resolveGlobalModules": true,
+  // Usa aspas simples em arquivos JSX com o Prettier.
+  "prettier.jsxSingleQuote": true,
+  // Usa aspas simples em vez de duplas com o Prettier.
+  "prettier.singleQuote": true,
+  // Controla o uso de vírgulas finais (trailing commas) com o Prettier. 'none' as remove.
+  "prettier.trailingComma": "none",
+  // Formata o conteúdo colado no editor automaticamente.
+  "editor.formatOnPaste": true,
+  // Define o número de linhas a rolar ao usar Page Up/Down para acessibilidade.
+  "editor.accessibilityPageSize": 1,
+  // Desativa o suporte de acessibilidade no editor.
+  "editor.accessibilitySupport": "off",
+  // Define o número de espaços para um tab.
+  "editor.tabSize": 2,
+  // Atraso em milissegundos para exibir informações ao passar o mouse (hover).
+  "editor.hover.delay": 500,
+  // Habilita a rolagem suave no editor.
+  "editor.smoothScrolling": true,
+  // Habilita a conclusão de código com a tecla Tab.
+  "editor.tabCompletion": "on",
+  // Define o estilo do cursor do editor.
+  "editor.cursorStyle": "line-thin",
+  // Desativa a aceitação de sugestões ao digitar caracteres de confirmação (como ';').
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  // Habilita a quebra de linha automática no editor.
+  "editor.wordWrap": "on",
+  // Define o número de comandos recentes a serem mantidos no histórico da Paleta de Comandos (0 = nenhum).
+  "workbench.commandPalette.history": 0,
+  // Desativa experimentos do VS Code.
+  "workbench.enableExperiments": false,
+  // Abre um novo arquivo sem título na inicialização.
+  "workbench.startupEditor": "newUntitledFile",
+  // Define o tema de ícones de arquivo.
+  "workbench.iconTheme": "material-icon-theme",
+  // Limita o número de editores abertos por grupo.
+  "workbench.editor.limit.perEditorGroup": true,
+  // Desativa a navegação para frente/trás usando os botões do mouse.
+  "workbench.editor.mouseBackForwardToNavigate": false,
+  // Desativa a restauração do estado da visualização (posição do cursor, etc.) ao reabrir um arquivo.
+  "workbench.editor.restoreViewState": false,
+  // Define o dimensionamento das abas do editor para encolher conforme necessário.
+  "workbench.editor.tabSizing": "shrink",
+  // Desativa a detecção automática do modo de alto contraste do sistema operacional.
+  "window.autoDetectHighContrast": false,
+  // Define o modo de atualização para 'start', que aplica atualizações na inicialização.
+  "update.mode": "start",
+  // Desativa a exibição de notas de versão após uma atualização.
+  "update.showReleaseNotes": false,
+  // Desativa a confirmação ao arrastar e soltar arquivos no explorador.
+  "explorer.confirmDragAndDrop": false,
+  // Desativa a confirmação ao excluir arquivos no explorador.
+  "explorer.confirmDelete": false,
+  // Personaliza as cores da sintaxe do código.
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment", // Aplica-se a comentários.
+        "settings": {
+          "foreground": "#659955", // Cor do texto.
+          "fontStyle": "italic" // Estilo da fonte.
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment.js", // Aplica-se à pontuação de comentários em JS.
+        "settings": {
+          "foreground": "#659955" // Cor do texto.
+        }
+      }
+    ]
+  },
+  // Associa a linguagem 'javascriptreact' ao Emmet.
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Habilita o "commit inteligente" do Git, que adiciona todas as alterações se nenhuma estiver em staging.
+  "git.enableSmartCommit": true,
+  // Define o formatador padrão para todos os arquivos.
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  // Evita adicionar parênteses em torno de um único argumento de arrow function com o Prettier.
+  "prettier.arrowParens": "avoid",
+  // Define o comprimento da linha para quebra no formatador de HTML (0 = desativado).
+  "html.format.wrapLineLength": 0,
+  // Define a ordem de classificação dos arquivos e pastas no explorador.
+  "explorer.sortOrder": "foldersNestsFiles",
+  // Define padrões para aninhar arquivos no explorador.
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  // Habilita o aninhamento de arquivos no explorador.
+  "explorer.fileNesting.enabled": true,
+  // Define a altura da linha no editor.
+  "editor.lineHeight": 1.8,
+  // Habilita sugestões de importação automática para JavaScript.
+  "javascript.suggest.autoImports": true,
+  // Atualiza automaticamente os caminhos de importação quando um arquivo é movido.
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // Ignora as recomendações de extensões.
+  "extensions.ignoreRecommendations": true,
+  // Desativa o log do servidor TypeScript.
+  "typescript.tsserver.log": "off",
+  // Associa padrões de arquivo a linguagens específicas.
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    "*.rmd": "rmarkdown",
+    "*.Rmd": "rmd"
+  },
+  // Desabilita as dicas de parâmetros de função.
+  "editor.parameterHints.enabled": false,
+  // Destaca a linha atual apenas na calha (gutter).
+  "editor.renderLineHighlight": "gutter",
+  // Atualiza automaticamente os caminhos de importação do TypeScript quando um arquivo é movido.
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Seleciona sempre a primeira sugestão na lista de autocompletar.
+  "editor.suggestSelection": "first",
+  // Desabilita a lente de código "Alteração Recente" do GitLens.
+  "gitlens.codeLens.recentChange.enabled": false,
+  // Desabilita o alerta ao fechar um terminal com um processo que terminou com erro.
+  "terminal.integrated.showExitAlert": false,
+  // Habilita sugestões de importação automática para TypeScript.
+  "typescript.suggest.autoImports": true,
+  // Define variáveis de ambiente para o terminal integrado no macOS.
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  // Formato do rótulo da aba do editor (curto).
+  "workbench.editor.labelFormat": "short",
+  // Habilita ligaduras de fonte no editor (ex: '=>' vira uma seta).
+  "editor.fontLigatures": true,
+  // Desabilita a renderização de pastas compactas no explorador (ex: 'src/components' em uma única linha).
+  "explorer.compactFolders": false,
+  // Tamanho da fonte do terminal integrado.
+  "terminal.integrated.fontSize": 14,
+  // Família da fonte do terminal integrado.
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  // Ações a serem executadas ao salvar um arquivo.
+  "editor.codeActionsOnSave": {
+    // Executa o 'fixAll' do ESLint apenas quando explicitamente solicitado.
+    "source.fixAll.eslint": "explicit"
+  },
+  // Define as linguagens que o ESLint deve validar.
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "graphql"
+  ],
+  // Desabilita o realce semântico, que usa informações do compilador para colorir o código.
+  "editor.semanticHighlighting.enabled": false,
+  // Define o tema de ícones do produto (ícones da UI do VS Code).
+  "workbench.productIconTheme": "fluent-icons",
+  // Desabilita a lente de código de autores do GitLens.
+  "gitlens.codeLens.authors.enabled": false,
+  // Define como lidar com arquivos não confiáveis.
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  // Configura padrões de arquivos e pastas a serem ocultados no explorador.
+  "files.exclude": {
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.git": true,
+    ".vscode": true
+    // "node_modules": true
+  },
+  // Desabilita a aceleração por GPU para o terminal integrado.
+  "terminal.integrated.gpuAcceleration": "off",
+  // Procura por repositórios Git nas pastas pai.
+  "git.openRepositoryInParentFolders": "always",
+  // Oculta a dica em grupos de editores vazios.
+  "workbench.editor.empty.hint": "hidden",
+  // Desabilita o prompt ao abrir URIs de protocolo de arquivo local.
+  "security.promptForLocalFileProtocolHandling": false,
+  // Família da fonte do editor de código.
+  "editor.fontFamily": "FiraCode Nerd Font",
+  // Estilo do indicador da extensão "Indent Rainbow".
+  "indentRainbow.indicatorStyle": "light",
+  // Largura da linha do indicador "light".
+  "indentRainbow.lightIndicatorStyleLineWidth": 2.5,
+  // Cores para as linhas de indentação do "Indent Rainbow".
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  // Faz com que Shift+Enter execute o código na janela interativa.
+  "interactiveWindow.executeWithShiftEnter": true,
+  // Oculta o aviso de descontinuação da extensão "Rainbow Brackets".
+  "RainbowBrackets.depreciation-notice": false,
+  // Impede que o terminal herde o ambiente do processo do VS Code.
+  "terminal.integrated.inheritEnv": false,
+  // Localização da barra de ferramentas da célula do notebook.
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  // Habilita a busca automática de alterações (fetch) do Git.
+  "git.autofetch": true,
+  // Habilita o realce de comentários da extensão "Better Comments" em arquivos de texto plano.
+  "better-comments.highlightPlainText": true,
+  // Formata o arquivo ao salvar.
+  "editor.formatOnSave": true,
+  // Formata o código enquanto você digita.
+  "editor.formatOnType": true,
+  // Define a localidade padrão para datas no GitLens.
+  "gitlens.defaultDateLocale": "en-US",
+  // Define o perfil de terminal padrão para Linux.
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  // Tempo limite em milissegundos para resolver o ambiente do shell.
+  "application.shellEnvironmentResolutionTimeout": 100,
+  // Configurações específicas para a linguagem Python.
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // Define o provedor padrão para o dobramento de código (code folding).
+  "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+  // Executa o código no terminal integrado em vez do painel de saída.
+  "code-runner.runInTerminal": true,
+  // Configurações específicas para a linguagem JavaScript.
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // Configurações que se aplicam a todos os perfis de usuário.
+  "workbench.settings.applyToAllProfiles": [
+    "editor.fontFamily",
+    "github.copilot.selectedCompletionModel",
+    "github.copilot.chat.terminalChatLocation",
+    "r.plot.useHttpgd"
+  ],
+  // Configurações específicas para JSON com comentários.
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Estilo do cursor no terminal integrado.
+  "terminal.integrated.cursorStyle": "line",
+  // Desabilita o minimapa do editor.
+  "editor.minimap.enabled": false,
+  // Visibilidade da barra de título customizada (automática).
+  "window.customTitleBarVisibility": "auto",
+  // Habilita/desabilita o GitHub Copilot para linguagens específicas.
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  // Confirmação ao excluir células em execução no Jupyter Notebook.
+  "notebook.confirmDeleteRunningCell": false,
+  // Define o tema de cores do editor.
+  "workbench.colorTheme": "Beautiful Dracula Normal - No Highlight",
+  // Habilita sugestões de edição do Copilot.
+  "github.copilot.nextEditSuggestions.enabled": true,
+  // Modelo de conclusão selecionado para o Copilot.
+  "github.copilot.selectedCompletionModel": "Claude 3.7 Sonnet",
+  // Localização do chat do Copilot.
+  "github.copilot.chat.terminalChatLocation": "terminal",
+  // Localização da barra de atividades.
+  "workbench.activityBar.location": "top",
+  // Modelo de IA para o GitLens.
+  "gitlens.ai.model": "vscode",
+  // Modelo de IA do Copilot para o GitLens.
+  "gitlens.ai.vscode.model": "copilot:gemini-2.5-pro",
+  // Visibilidade da barra de menu.
+  "window.menuBarVisibility": "toggle",
+  // Estilo da barra de título.
+  "window.titleBarStyle": "compact",
+  // Título da janela.
+  "window.title": "${dirty}",
+  // Desabilita o centro de comandos.
+  "window.commandCenter": false,
+  // Localização da barra de atividades.
+  "workbench.activityBar.location": "top",
+  // Desabilita o controle de layout.
+  "workbench.layoutControl.enabled": false,
+  // Desabilita o centro de comandos do chat.
+  "chat.commandCenter.enabled": false,
+  // Desabilita rótulos nas abas do painel.
+  "workbench.panel.showLabels": false,
+  // Configurações específicas para a linguagem R.
+  "[r]": {
+    "editor.formatOnSave": true
+  },
+  // Configurações específicas para R Markdown.
+  "[rmarkdown]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnSave": true
+  },
+  // Habilita o uso do httpgd para plots do R.
+  "r.plot.useHttpgd": true,
+  // Opções para o terminal R no Linux.
+  "r.rterm.option": [
+    "--no-save",
+    "--no-restore",
+    "--local-history"
+  ],
+  // Caminho para o executável do R no Linux.
+  "r.rpath.linux": "/usr/bin/R",
+  // Caminho para o terminal R no Linux.
+  "r.rterm.linux": "/usr/bin/R",
+  // Sempre usa o terminal ativo para executar código R.
+  "r.alwaysUseActiveTerminal": true,
+  // Habilita o modo de colagem com destaque para R.
+  "r.bracketedPaste": true,
+  // Comandos do Lens de código para R Markdown.
+  "r.rmarkdown.codeLensCommands": [
+    "r.runCurrentChunk",
+    "r.runAboveChunks",
+    "r.runBelowChunks"
+  ],
+}
