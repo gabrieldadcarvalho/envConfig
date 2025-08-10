@@ -58,8 +58,6 @@
   "workbench.editor.mouseBackForwardToNavigate": false,
   // Desativa a restauração do estado da visualização (posição do cursor, etc.) ao reabrir um arquivo.
   "workbench.editor.restoreViewState": false,
-  // Define o dimensionamento das abas do editor para encolher conforme necessário.
-  "workbench.editor.tabSizing": "shrink",
   // Desativa a detecção automática do modo de alto contraste do sistema operacional.
   "window.autoDetectHighContrast": false,
   // Define o modo de atualização para 'start', que aplica atualizações na inicialização.
@@ -270,8 +268,6 @@
   },
   // Confirmação ao excluir células em execução no Jupyter Notebook.
   "notebook.confirmDeleteRunningCell": false,
-  // Define o tema de cores do editor.
-  "workbench.colorTheme": "Beautiful Dracula Normal - No Highlight",
   // Habilita sugestões de edição do Copilot.
   "github.copilot.nextEditSuggestions.enabled": true,
   // Modelo de conclusão selecionado para o Copilot.
@@ -298,11 +294,10 @@
   "workbench.layoutControl.enabled": false,
   // Desabilita o centro de comandos do chat.
   "chat.commandCenter.enabled": false,
-  // Desabilita rótulos nas abas do painel.
-  "workbench.panel.showLabels": false,
   // Configurações específicas para a linguagem R.
   "[r]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "REditorSupport.r"
   },
   // Configurações específicas para R Markdown.
   "[rmarkdown]": {
@@ -329,6 +324,22 @@
   "r.rmarkdown.codeLensCommands": [
     "r.runCurrentChunk",
     "r.runAboveChunks",
-    "r.runBelowChunks"
+    "r.runBelowChunks",
+    "r.runCurrentAndBelowChunks"
   ],
+  "r.lsp.diagnostics": false,
+  "[rmd]": {
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Beautiful Dracula Darker - No Highlight",
+  "excalidraw.language": "en",
+  "excalidraw.theme": "dark",
+  "workbench.editor.highlightModifiedTabs": true,
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true
+  },
+  "workbench.secondarySideBar.defaultVisibility": "visible",
 }
